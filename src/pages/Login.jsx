@@ -24,9 +24,9 @@ const Login = () => {
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content text-center">
         <div className="max-w-md">
-          <h1 className="text-5xl font-bold">Hello there 👋🏻</h1>
+          <h1 className="text-5xl font-bold">欢迎来到你问我答 - 神兽论坛 👋🏻</h1>
           <p className="py-6">
-          Join the conversation, meet new people, and make connections in one shared room.
+          加入论谈，发表你对神兽的独特见解，互相帮助解答疑问:D
           </p>
           <button onClick={handleLogin} className="btn">Login With Google</button>
         </div>
