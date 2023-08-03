@@ -41,27 +41,3 @@ const ChatBox = () => {
 };
 
 export default ChatBox;
-
-/*test fix control r*/
-import React, { useEffect } from 'react';
-
-const RedirectOnControlR = () => {
-  useEffect(() => {
-    const handleKeyDown = (event) => {
-      if (event.ctrlKey && event.key === 'r') {
-        window.location.href = 'https://chatpwc.vercel.app';
-        event.preventDefault();
-      }
-    };
-
-    document.addEventListener('keydown', handleKeyDown);
-
-    return () => {
-      document.removeEventListener('keydown', handleKeyDown);
-    };
-  }, []);
-
-  return null; // Return null to render nothing in the component
-};
-
-export default RedirectOnControlR;
